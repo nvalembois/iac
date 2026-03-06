@@ -34,7 +34,7 @@ jobs:
         name: Read versions
         id: versions
         run: |
-          awk -f versions.awk Dockerfile >> $GITHUB_OUTPUT
+          awk -f .github/scripts/versions.awk Dockerfile >> $GITHUB_OUTPUT
       - 
         name: Login to registry ${{ env.REGISTRY }}
         if: ${{ github.ref_name == 'main' }}
