@@ -16,5 +16,3 @@ jobs:
         exclude-tags: latest
         keep-n-tagged: 5
         older-than: 30days
-        dry-run: true
-        log-level: debug
