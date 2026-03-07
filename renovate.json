@@ -13,7 +13,7 @@
       "groupName": "image"
     },
     {
-      "matchDatasources": ["github-runners"],
+      "matchDatasources": ["github-actions"],
       "groupName": "githubCi"
     }    
   ]
