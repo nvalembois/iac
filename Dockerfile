@@ -12,7 +12,7 @@ ENV USERNAME=$USERNAME
 COPY --from=tofu /usr/local/bin/tofu /usr/local/bin/tofu
 
 # renovate: datasource=pypi depName=ansible
-ARG ANSIBLE_VERSION=13.4.0
+ARG ANSIBLE_VERSION=13.5.0
 
 RUN set -e && \
     DEBIAN_FRONTEND=noninteractive apt-get update && \
