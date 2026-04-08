@@ -1,6 +1,6 @@
 FROM ghcr.io/opentofu/opentofu:1.11.6-minimal@sha256:3e11ca509319257e46ea6fb1b98cf77d185a1e370cc8dd1bf187f6b8515a73d9 AS tofu
 
-FROM docker.io/library/python:3.14.3-slim@sha256:5e59aae31ff0e87511226be8e2b94d78c58f05216efda3b07dbbed938ec8583b
+FROM docker.io/library/python:3.14.4-slim@sha256:13c5640e79ce15c280f6a3d63c6e17d14420d26821e406c211a7cc332e9782b2
 
 ENV HOME=/work
 ARG USERID=10000
