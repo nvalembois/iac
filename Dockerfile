@@ -1,4 +1,4 @@
-FROM ghcr.io/opentofu/opentofu:1.12.1-minimal@sha256:fbfeb438edb0d0116239096964595c7cbe57d9c9924359d8fa86297cf0f0f810 AS tofu
+FROM ghcr.io/opentofu/opentofu:1.12.2-minimal@sha256:536e0cb676c142f53cac899319c9538c288054f5e849508aef8a19c115178d8b AS tofu
 
 FROM docker.io/library/python:3.14.6-slim@sha256:c79315c9ba2403aecb221fb9090486be9af43cdc2372959ca7ccf6b17ebe9912
 
