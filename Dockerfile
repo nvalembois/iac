@@ -1,6 +1,6 @@
-FROM ghcr.io/opentofu/opentofu:1.13.1-minimal@sha256:6f0991e9013aab42a683a8cfc83a2d604af28fca1d6b07f3cb80f657e099e089 AS tofu
+FROM ghcr.io/opentofu/opentofu:1.13.9-minimal@sha256:9df24dc203789b36039f1740993f1d1b4b50ab5d78fe2d1b5ad28fe9da4b5d16 AS tofu
 
-FROM docker.io/library/python:3.14.8-slim@sha256:a2b82f3c48559aa0a8446d9af49826b6e2b2016f4cd2afabfe6013ec53729170
+FROM docker.io/library/python:3.15.2-slim@sha256:e97b88e416c3c01eb427b21fd8cd3ebf006e6ee38afcfcc3cae1c54ee2ab0a75
 
 ENV HOME=/work
 ARG USERID=10000
@@ -12,7 +12,7 @@ ENV USERNAME=$USERNAME
 COPY --from=tofu /usr/local/bin/tofu /usr/local/bin/tofu
 
 # renovate: datasource=pypi depName=ansible
-ARG ANSIBLE_VERSION=14.5.0
+ARG ANSIBLE_VERSION=14.6.0
 
 RUN set -e && \
     DEBIAN_FRONTEND=noninteractive apt-get update && \
